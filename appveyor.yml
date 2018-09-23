@@ -1,0 +1,12 @@
+version: 0.0.1.{build}
+
+shallow_clone: true
+
+build_script:
+  - cmd: |
+      choco install haskell-stack
+      C:\msys64\msys2_shell.cmd -mingw64 -defterm -here -no-start -e /C/projects/asterius/.appveyor/build.sh
+
+artifacts:
+  - path: 'ghc\ghc-bindist\*'
+    name: ghc
