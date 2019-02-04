@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Status reports - Asterius</title>
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Status reports";
+    var mkdocs_page_input_path = "reports.md";
+    var mkdocs_page_url = "/asterius/reports/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Asterius</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="..">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../building/">Building guide</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ahc-link/">Using ahc-link</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../jsffi/">JavaScript FFI</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../vault/">The Vault</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../rts-api/">Invoking RTS API in JavaScript</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ir/">IR types and transformation passes</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../debugging/">The runtime debugging feature</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../architecture/">Project architecture</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../wasm-in-hs/">Writing WebAssembly code in Haskell</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../webassembly/">WebAssembly as a Haskell compilation target</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../custom-ghc/">About the custom GHC fork</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../readings/">Reading list</a>
+	    </li>
+          
+            <li class="toctree-l1 current">
+		
+    <a class="current" href="./">Status reports</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l2"><a href="#status-reports">Status reports</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l3" href="#2019-02-04">2019-02-04</a></li>
+        
+            <li><a class="toctree-l3" href="#2019-01-28">2019-01-28</a></li>
+        
+            <li><a class="toctree-l3" href="#2019-01-21">2019-01-21</a></li>
+        
+            <li><a class="toctree-l3" href="#2019-01-13">2019-01-13</a></li>
+        
+            <li><a class="toctree-l3" href="#2018-12-28">2018-12-28</a></li>
+        
+        </ul>
+    
+
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Asterius</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Status reports</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/tweag/asterius/edit/master/docs/reports.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="status-reports">Status reports</h1>
+<p>This page maintains a list of weekly status reports for the project.</p>
+<h2 id="2019-02-04">2019-02-04</h2>
+<p>Covers last week.</p>
+<p>Ongoing work:</p>
+<ul>
+<li>Finished the preliminary implementation of GC.<ul>
+<li>To increase reliability and catch regressions, after each GC pass, the recycled space is zeroed. If the tospace still contains pointers to recycled space (which is definitely a bug), the program is likely to crash early.</li>
+<li>This has helped us to identify &amp; fix a few bugs in the GC implementation. Right now there is only one regression left: the todomvc example crashes after initial loading completes. The crash goes away if we don't zero recycled space, but it's not a good idea to just turn that off and pretend there's no bug!</li>
+</ul>
+</li>
+</ul>
+<p>Remaining work for GC:</p>
+<ul>
+<li>Fix the todomvc regression. Given GC is such a critical component in the runtime, it's probably also good timing to integrate some more unit tests from the GHC test suite.<ul>
+<li>This also needs some improvement in our debugging infrastructure: our memory traps (wasm read/write barriers) is currently unaware of recycled/live space, and now we should make it cooperate with the allocator to catch invalid access to recycled space earlier.</li>
+</ul>
+</li>
+</ul>
+<p>Known drawbacks of current GC implementation once it's fully fixed &amp; merged:</p>
+<ul>
+<li>No generational GC yet, so high GC overhead if a large volume of long-lived data is retained through program execution.</li>
+<li>Heap fragmentation is more severe when allocating a lot of small pinned objects.</li>
+<li><code>Weak#</code> support is expected to split into two different stages and will land after initial GC merge:<ul>
+<li>Support for running "C finalizers" added by the <code>addCFinalizerToWeak#</code> primop. Here, the "C finalizers" are really just JavaScript functions, and the "function pointers" are JavaScript references.</li>
+<li>Support for running arbitrary <code>IO</code> action as finalizers. This task requires support for Haskell multi-threading, and given multi-threading is not a scheduled goal of 2019 Q1, this will come later.</li>
+</ul>
+</li>
+<li>Haskell closures exported to JavaScript using <code>makeHaskellCallback*</code> cannot be automatically recycled when they aren't used anymore. This is due to JavaScript's lacking of finalizers; users will need to call <code>freeHaskellCallback*</code> by hand to prevent leaking on the Haskell side.</li>
+</ul>
+<p>We'll yield to Cabal support &amp; TH/GHCi/Plugins support after the first version of GC is delivered. There's definitely room for improvement later (e.g. reduce heap fragmentation, different GC algorithms for different workloads, more detailed GC statistics, etc), but those will be managed by separate tickets.</p>
+<h2 id="2019-01-28">2019-01-28</h2>
+<p>Covers last week.</p>
+<p>Ongoing work:</p>
+<ul>
+<li>More work to improve the sanity checker and get GC near completion:<ul>
+<li>The sanity checker spotted a fatal situation where previously unreachable static closures become reachable again. More experiments in this direction invalidated a previous conjecture that no special treatments for static closure is required as long as they have valid block descriptors and can be moved just like dynamic ones.</li>
+<li>The solution to the problem above is not hard: when scanning an info table, we also follow the SRT if it's present, and we still need to identify static/dynamic closures and prevent moving static ones. This is implemented in the sanity checker.</li>
+<li>The sanity checker is no longer backed by explicit recursion. When scanning a long chain of closures, we won't run out of JavaScript stack space.</li>
+<li>Adjusting the codegen &amp; standard libraries to cope with upcoming GC:<ul>
+<li>The <code>makeHaskellCallback*</code> interfaces now properly allocate a stable pointer for the exported Haskell closure. This is to ensure that they remain valid when later called from JavaScript, even after GC runs.</li>
+<li>The function closures of <code>foreign export javascript</code> clauses are recognized and become GC roots for similar reasons.</li>
+<li><code>Asterius.Types</code> is moved from <code>ghc-prim</code> to <code>base</code>, so the <code>JSVal</code> type can be backed by <code>StablePtr</code>. The GC will use a tag bit to identify regular stable pointers and JavaScript references, and automatically free unused references.</li>
+<li><code>Integer</code> is promoted to a standalone datatype, so the GC can scan reachable <code>Integer</code>s and free unreachable ones which point to <code>BigInt</code>s.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>Remaining work for GC:</p>
+<ul>
+<li>Implement evac/scav functionality.</li>
+<li>Implement support for <code>Weak#</code>s based on the constraint that no Haskell execution is required when firing a finalizer.</li>
+</ul>
+<h2 id="2019-01-21">2019-01-21</h2>
+<p>Covers last week.</p>
+<p>Ongoing work:</p>
+<ul>
+<li>Bugfixes &amp; partially done GC work of later stages (recycling Haskell heap space &amp; JavaScript references):<ul>
+<li>Unified treatment of regular <code>StablePtr#</code>s and <code>JSVal</code> in the runtime. They are identified by a tag bit, and GC will be able to recognize live <code>JSVal</code>s when scanning the Haskell heap.</li>
+<li>Added the SPT as sanity check/garbage collection roots.</li>
+<li>Fixed a sanity check bug related to AP/PAP heap objects. This could be triggered when checking the SPT after passing a closure built by chained <code>rts_apply</code> calls to <code>rts_evalStableIO</code>.</li>
+<li>Reimplemented the linker layout code. We now put non-closures &amp; closures to separate regions, and the regions are statically allocated block groups which is handled by the sm uniformly like dynamically allocated groups. This enables us to treat static closures as if they're dynamic ones without any special hack.</li>
+<li>Simplified the block allocator. We no longer manage block at 4K granularity; now we only manage 1M sized ones. Pros &amp; cons:<ul>
+<li>Much fewer blocks needed to manage, so simpler/faster runtime code.</li>
+<li>Larger nurseries mean the Haskell mutator code signals <code>HeapOverflow</code> much less frequently. Should reduce amortized GC cost.</li>
+<li>The main drawback is increated heap fragmentation when it comes to allocating lots of small pinned objects. This is not yet a primary concern, and can be addressed later by a hybrid GC which switches to non-moving mark-sweep algorithm for block groups with pinned objects.</li>
+</ul>
+</li>
+<li>Added functionality to free block groups, so they can later be reused without growing the linear memory. Their payloads can be zeroed to eliminate a potential attack surface (or for better reproduction of bugs in case something goes wrong)</li>
+<li>Moved <code>allocate*</code> to the JavaScript runtime and properly implemented <code>allocatePinned</code>. Previously it was simply an alias of <code>allocate</code> since we didn't move anything around.</li>
+</ul>
+</li>
+</ul>
+<p>Planned work for next week:</p>
+<ul>
+<li>Wrap up all GC work and get a fully functional GC up &amp; running. This was originally planned to finish by end of last week, but fell behind schedule due to the hidden workload described above. Required work:<ul>
+<li>Implement evac/scav functionalities in the runtime.</li>
+<li>Remove the now obsolete symbol table exporting mechanism, and any closure required to survive all GC scans need to be explicitly present in the SPT upon startup.</li>
+<li>Remove the terrible hacks of directly coercing between GC pointers of boxed types and regular <code>Addr#</code>s when crossing the FFI boundary. Now we must properly pass <code>StablePtr#</code>s.</li>
+<li>Breaking refactorings in the current boot libs:<ul>
+<li>The <code>JSVal</code> family of types need to be moved from <code>ghc-prim</code> to <code>base</code> (or a separate package depending on <code>base</code>), since it needs to be a <code>newtype</code> wrapper of <code>StablePtr</code> which is defined in <code>base</code>.</li>
+<li>The <code>Integer</code> type gets promoted to a standalone datatype. We still use tagging to identify small <code>Integer</code>s and <code>BigInt</code>s which is managed by SPT just like other <code>JSVal</code>s.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="2019-01-13">2019-01-13</h2>
+<p>Covers the last week. The week before was new year vacation; happy new year everyone!</p>
+<p>Completed &amp; ongoing work:</p>
+<ul>
+<li>Completed the "modularized runtime" refactorings. (#50)</li>
+<li>Drafted three feature roadmaps:<ul>
+<li>Implement proper garbage collection (#52)</li>
+<li>Implement Cabal support (#53)</li>
+<li>Implement support for Template Haskell/GHCi/Plugins (#54)</li>
+<li>The above proposals are scheduled to be completed on 2019 Q1.</li>
+</ul>
+</li>
+<li>Began working on GC, and finished the first stage: accurate heap objects traversal.<ul>
+<li>Identify different types of data sections in object files (regular bytes/info tables/closures). The info table addresses are emitted into generated JavaScript to allow an accurate info table sanity check.</li>
+<li>Implemented runtime utils for directly manipulating the linear memory with tagged addresses.</li>
+<li>Implemented the sanity check which traverses the whole heap and visits every live object. All existing unit tests pass this check.</li>
+</ul>
+</li>
+</ul>
+<p>Planned work for next week:</p>
+<ul>
+<li>Finish the second stage of GC support: evacuate/scavenge.<ul>
+<li>See #52 for details. After this is finished, GC will be operational.</li>
+<li>Support for handling <code>JSVal</code> and <code>Weak#</code> is scheduled in later stages.</li>
+</ul>
+</li>
+</ul>
+<p>Originally scheduled but lowered priority:</p>
+<ul>
+<li>Improving the Cloudflare worker demo. We're prioritizing more pressing issues like GC over specific use cases right now.</li>
+</ul>
+<p>Special thanks to Moritz Angermann (@angerman) for contributing a patch (#55) for fixing <code>ar</code> problem on macOS, and helping to improve macOS &amp; cabal support, discovering a GHC bug related to tables-next-to-code (#16174).</p>
+<h2 id="2018-12-28">2018-12-28</h2>
+<p>Covers the last two weeks.</p>
+<p>Completed work:</p>
+<ul>
+<li>Significant refactorings in the runtime.<ul>
+<li>Pruned ~500 loc weed code in <code>Asterius.Builtins</code> without breaking tests.</li>
+<li>Enhanced the scheduler.<ul>
+<li>Previously, when entering a Haskell thread, we evaluated to completion and checked the return code; if something goes wrong, we would just throw an error.</li>
+<li>Now, the scheduler is capable of handling certain scenarios like heap overflow and resuming Haskell execution.</li>
+</ul>
+</li>
+<li>Enhanced the storage manager.<ul>
+<li>Previously, the block allocator always triggered a <code>grow_memory</code> opcode when requesting blocks, making a lot of <code>Array#</code>/<code>ByteArray#</code> related primops rather in-efficient. Also, we allocated a huge heap (defaults to 1G) upon startup and pretended it won't run out.</li>
+<li>Now, the block allocator grows the linear memory efficiently. And the initial heap is small (4K for both the nursery and the object pool); an overflow condition automatically extends it.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Implemented the "persistent vault" feature.<ul>
+<li>Every asterius instance has a KV store called a "vault" which can be accessed in both Haskell/JavaScript. It can be used to transfer state across instances, so when an instance throws errors we can't handle, we can restart a new one without losing context.</li>
+<li>This is a part of the work for Cloudflare Worker showcase.</li>
+</ul>
+</li>
+<li>Delivered a working TodoMVC example and issued a blog post.</li>
+<li>Other notable bugfixes/improvements:<ul>
+<li>Fixed the <code>dirty_MUT_VAR</code> write barrier for <code>MutVar#</code>s. All non-atomic <code>MutVar#</code>/<code>IORef</code>/<code>STRef</code> operations now work. This is a part of the work for TodoMVC showcase.</li>
+<li>We implemented UTF8/UTF16-LE/UTF32-LE/Latin-1 encoding/decoding in the runtime. This is a part of the work for <code>text</code> support.</li>
+<li>The <code>makeHaskellCallback</code> functions are slightly more efficient by avoiding the overhead of allocating <code>StablePtr</code>s.</li>
+</ul>
+</li>
+</ul>
+<p>On-going work not completed yet:</p>
+<ul>
+<li>Modularizing the runtime.<ul>
+<li>Previously, the runtime is a single monolithic JavaScript script which is pasted into the output script. We'd like to split it to modules, and allow users to supply their own module to override the default behavior (evaluating <code>Main.main</code> once).</li>
+<li>Rationales:<ul>
+<li>For users, it's much more convenient to implement custom logic via a proper module file. Especially in the Cloudflare Worker case, where we need:<ul>
+<li>Fully synchronous initialization</li>
+<li>Capturing errors/rebooting a new instance</li>
+</ul>
+</li>
+<li>It's now possible to write tests for individual pieces of the runtime. This is critical to improve the runtime's reliability.</li>
+<li>There were some pasted parts in the monolithic runtime; now we can properly reuse code.</li>
+<li>It's also convenient to inject link-time information into the runtime.</li>
+</ul>
+</li>
+<li>We've introduced <code>parcel</code> into our toolchain to implement a "bundling" functionality: at link-time, re-generating a standalone <code>.js</code> file containing all the runtime modules. This is already implemented.</li>
+<li>We're gradually splitting the monolithic runtime to modules, taking care not to break stuff. Not completed; so far so good.</li>
+</ul>
+</li>
+<li>Delivering a non-trivial Cloudflare Worker demo.<ul>
+<li>We already have a trivial one working. It's trivial because it only does synchronous request -&gt; response computation; more "real-world" ones will need to invoke asynchronous JavaScript computation (e.g. using Fetch API)</li>
+<li>Dealing with JavaScript asynchronous computation is not quite tolerable yet; we need to litter the code with <code>makeHaskellCallback*</code>, at least one such call for a JavaScript <code>await</code>.</li>
+<li>We currently have two potential approaches of improving user experience with async js code:<ul>
+<li>Implement some CPS-based EDSL to automatically deal with callback marshaling.</li>
+<li>Implement a simple IO manager in the runtime which is capable of suspending Haskell threads when calling async js code and resuming them upon resolving/rejecting.</li>
+<li>The second one sounds much more decent, but has a high difficulty level. We'll start from the first one.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>Rough plans for next week:</p>
+<ul>
+<li>Finish the work on modularizing the runtime, document new behavior of JavaScript generation, then merge to <code>master</code>.</li>
+<li>Deliver a more decent Cloudflare worker demo which calls some async js code.</li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="../readings/" class="btn btn-neutral" title="Reading list"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/tweag/asterius/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../readings/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+
+</body>
+</html>
